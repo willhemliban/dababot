@@ -9,7 +9,7 @@ class StdOutListener(StreamListener):
     def on_data(self, data): 
         clean_data = json.loads(data)
         tweetId = clean_data["id"]
-        tweet = "https://twitter.com/extendo64_/status/1374910500606251008/video/1"
+        tweet = "Ta gueule LESS GOOOOOO 🔥🔥🔥 https://twitter.com/extendo64_/status/1374910500606251008/video/1"
         respondToTweet(tweet, tweetId)
 
 def respondToTweet(tweet, tweetId): 
