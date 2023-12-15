@@ -9,7 +9,7 @@ class StdOutListener(StreamListener):
     def on_data(self, data): 
         clean_data = json.loads(data)
         tweetId = clean_data["id"]
-        tweet = "Ta gueule LESS GOOOOOO 🔥🔥🔥 https://twitter.com/extendo64_/status/1374910500606251008/video/1"
+        tweet = "LESS GOOOOOO 🔥🔥🔥 https://twitter.com/extendo64_/status/1374910500606251008/video/1"
         respondToTweet(tweet, tweetId)
 
 def respondToTweet(tweet, tweetId): 
@@ -33,7 +33,7 @@ def followStream():
 
     stream = Stream(auth, listener)
     stream.filter(track=["BotDababy"]) #filter=[ACCOUNT_ID]
-    # publishTweet(tweet)
+    publishTweet(tweet)
 
 
 
